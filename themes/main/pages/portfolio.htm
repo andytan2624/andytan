@@ -1,0 +1,45 @@
+title = "Portfolio"
+url = "/portfolio"
+layout = "default"
+description = "My portfolio"
+is_hidden = 0
+
+[portfolio portfolioSpecial]
+category = 5
+itemsPerPage = 6
+order = "asc"
+pageNumber = "{{ :page }}"
+selectedTag = "{{ :selected_tag }}"
+selectedCat = "{{ :selected_cat }}"
+catListPage = "about"
+itemPage = "about"
+tagListPage = "about"
+==
+<header class="intro-header" style="background-image: url('{{ "assets/images/about-bg.png"|theme }}')">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 ">
+            <div class="site-heading">
+                <h2>{{ this.page.title }}</h2>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <p>
+                I am currently working as a PHP Developer at 4Mation Technologies since March 2015. I have previously worked as a developer at the following places:
+                <ul>
+                    <li>Red Propaganda (July 2013 - March 2015)</li>
+                    <li>IBM (February 2010 - June 2013)</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="portfolio">
+            {% component 'portfolioSpecial' %}
+        </div>
+    </div>
+</div>

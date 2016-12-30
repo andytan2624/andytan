@@ -52,17 +52,17 @@ return [
             'prefix'   => '',
         ],
 
-        'mysql' => [
+        'mysql' => array(
             'driver'    => 'mysql',
             'host'      => 'localhost',
-            'port'      => '',
-            'database'  => 'database',
-            'username'  => 'root',
-            'password'  => '',
+            'port'      => 3306,
+            'database'  => 'andytan',
+            'username'  => 'andytan',
+            'password'  => 'password',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
-        ],
+        ),
 
         'pgsql' => [
             'driver'   => 'pgsql',
@@ -116,12 +116,7 @@ return [
 
         'cluster' => false,
 
-        'default' => [
-            'host'     => '127.0.0.1',
-            'password' => null,
-            'port'     => 6379,
-            'database' => 0,
-        ],
+        'default' => 'mysql',
 
     ],
 

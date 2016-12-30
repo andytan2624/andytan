@@ -1,0 +1,45 @@
+@media (max-width: 991px) {
+  .jumbotron {
+    background-position: 10% 10%;
+  }
+
+  .device {
+    margin-top: 28px;
+  }
+  .treehouse-ad {
+    display: none;
+  }
+
+  footer.container .social-icons {
+    text-align: center;
+    margin: 6% 0;
+  }
+
+  .circle {
+    max-width: 300px;
+    margin: 0 auto 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  footer {
+    .col-md-4 {
+      display: block;
+      width: 100%;
+      &.treehouse-ad {
+        display: none;
+      }
+    }
+  }
+
+  #headerTxt {
+    text-align: left;
+    width: auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .jumbotron-container {
+    width: 70%;
+  }
+}
