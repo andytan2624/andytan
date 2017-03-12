@@ -1,0 +1,333 @@
+[portfolio]
+category = 0
+itemsPerPage = 6
+order = "asc"
+pageNumber = "{{ :page }}"
+selectedTag = "{{ :selected_tag }}"
+
+[portfolio portfoliohome]
+category = 0
+itemsPerPage = 6
+order = "asc"
+pageNumber = "{{ :page }}"
+selectedTag = "{{ :selected_tag }}"
+==
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Andy Tan | Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ ['assets/lib/bootstrap/css/bootstrap.min.css']|theme }}" rel="stylesheet">
+
+
+    <!-- Additional fonts for this theme -->
+    <link href="{{ ['assets/lib/font-awesome/css/font-awesome.min.css']|theme }}" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this theme -->
+    <link href="{{ ['assets/css/agency.min.css']|theme }}" rel="stylesheet">
+
+    <!-- Temporary navbar container fix until Bootstrap 4 is patched -->
+    <style>
+        .navbar-toggler {
+            z-index: 1;
+        }
+
+        @media (max-width: 576px) {
+            nav > .container {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-toggleable-md navbar-inverse" id="mainNav">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">Andy Tan</a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">Hi I'm Andy</div>
+            <div class="intro-heading">It's Nice To Meet You</div>
+            <a href="#myskills" class="page-scroll btn btn-xl">My Skills</a>
+        </div>
+    </div>
+</header>
+
+<!-- Services -->
+<section id="myskills">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Skills</h2>
+                <h3 class="section-subheading text-muted">Here is a list of some of the skills I know</h3>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa icon-php fa-stack-1x fa-inverse"></i>
+                    </span>
+                <h4 class="service-heading">PHP</h4>
+                <p class="text-muted">Symfony 1.4, CakePHP 2, CodeIgniter 2, Laravel 5+</p>
+            </div>
+            <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa icon-css3 fa-stack-1x fa-inverse"></i>
+                    </span>
+                <h4 class="service-heading">CSS</h4>
+                <p class="text-muted">SASS, Modular CSS</p>
+            </div>
+            <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa icon-javascript fa-stack-1x fa-inverse"></i>
+                    </span>
+                <h4 class="service-heading">Javascript</h4>
+                <p class="text-muted">Including jQuery, Angular 1, React.js</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-wordpress fa-stack-1x fa-inverse"></i>
+                    </span>
+                <h4 class="service-heading">WordPress</h4>
+                <p class="text-muted">Administration, Plugin and Theme Development</p>
+            </div>
+            <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-envira fa-stack-1x fa-inverse"></i>
+                    </span>
+                <h4 class="service-heading">OctoberCMS</h4>
+                <p class="text-muted"></p>
+            </div>
+            <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+                    </span>
+                <h4 class="service-heading">Database Administration</h4>
+                <p class="text-muted">MySQL, PostgreSQL, SQLite, MSSQL</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Grid -->
+{% component 'portfoliohome' %}
+
+<!-- About -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">About</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <img class="rounded-circle img-fluid" src="{{ "assets/img/logos/deloitte.png"|theme }}" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2008-2009</h4>
+                                <h4 class="subheading">Deloitte</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    Assisting with developers in the team including
+                                    <ul>
+                                        <li>Writing support manuals for applications</li>
+                                        <li>Designing database schema for web application</li>
+                                        <li>Develop mock-ups for web application</li>
+                                        <li>Assist designing interfaces and creating web forms for application</li>
+                                        <li>Assist debugging errors in applications</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="rounded-circle img-fluid" src="{{ "assets/img/logos/ibm.jpg"|theme }}" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>February 2010 - June 2013</h4>
+                                <h4 class="subheading">IBM</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    This role is responsible for developing and managing websites to enable continuous
+                                    improvement across multiple departments. Working with internal clients (Managers,
+                                    Quality Analysts, Project Managers), a list of requirements are drawn up based on
+                                    the scope of the project and a project plan is created to keep the project delivered
+                                    on time
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>July 2013 - March 2015</h4>
+                                <h4 class="subheading">Red Propaganda</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    As part of a team, help develop and maintain websites that improve user experience,
+                                    and making sure the content is delivered effectively across all devices and screens
+                                    using HTML5, CSS3, Javascript, jQuery and other cool plugins on the Symfony PHP
+                                    Framework and Foundation Framework.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="rounded-circle img-fluid" src="{{ "assets/img/logos/4mation.png"|theme }}" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>March 2015 - Present</h4>
+                                <h4 class="subheading">4mation Technologies</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    Working as a developer at 4mation Technologies. Working on both greenfield projects
+                                    and legacy projects for clients such as LTrent Driving School, Kennards Self Storage
+                                    and Canteen across different platforms ( WordPress, Laravel, CakePHP )
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team -->
+<section id="team" class="bg-faded">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Contact Me</h2>
+                <h3 class="section-subheading text-muted">I am currently based in Sydney, Australia</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <img src="{{ "assets/img/profile.jpeg"|theme }}" class="mx-auto rounded-circle" alt="">
+                    <p class="text-muted">Web Developer</p>
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/andytan87/"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-center">
+                <p class="large text-muted">If you have any questions you wanna ask me, please contact me throught the social links.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="copyright">Copyright &copy; Andy Tan 2017</span>
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Portfolio Modals -->
+
+{% component 'portfolio' %}
+
+<!-- Bootstrap core JavaScript -->
+<script src="{{ ['assets/lib/jquery/jquery.min.js']|theme }}"></script>
+<script src="{{ ['assets/lib/tether/tether.min.js']|theme }}"></script>
+<script src="{{ ['assets/lib/bootstrap/js/bootstrap.min.js']|theme }}"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Contact form JavaScript -->
+<script src="{{ ['assets/js/jqBootstrapValidation.js']|theme }}"></script>
+<script src="{{ ['assets/js/contact_me.js']|theme }}"></script>
+
+<!-- Cusotm JavaScript for this theme -->
+<script src="{{ ['assets/js/agency.min.js']|theme }}"></script>
+
+
+</body>
+
+</html>
